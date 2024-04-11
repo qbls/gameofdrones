@@ -18,7 +18,6 @@ Matis JANSOU, Bachelor CSI (Conception de Sytèmes d'Informations)
 MAIL :
 
 quentin.blasco@orange.fr\
-
 jansoumatis7@gmail.com
 
 
