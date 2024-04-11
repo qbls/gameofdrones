@@ -5,36 +5,31 @@ $username = "user";
 $password = "user";
 $dbname = "gameofdrones";
 
-// Créer la connexion
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Vérifier la connexion
-if ($conn->connect_error) {
-    die("La connexion a échoué : " . $conn->connect_error);
-}
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // Récupérer les données de la requête POST
-$drone_id = $_POST['drone_id'];
 $latitude = $_POST['latitude'];
 $longitude = $_POST['longitude'];
 $altitude = $_POST['altitude'];
-$datetime = $_POST['datetime'];
+$date = date("Y-m-d H:i:s");
 
-$drone_id = $_GET['drone_id'];
-$latitude = $_GET['latitude'];
-$longitude = $_GET['longitude'];
-$altitude = $_GET['altitude'];
-$datetime = $_GET['datetime'];
+//$latitude = $_GET['latitude'];
+//$longitude = $_GET['longitude'];
+//$altitude = $_GET['altitude'];
+//$date = date("Y-m-d H:i:s");
 
 // Préparer et lier
-$stmt = $conn->prepare("INSERT INTO drone_positions (drone_id, latitude, longitude, altitude, datetime) VALUES (?, ?, ?, ?, ?)");
-$stmt->bind_param("sddds", $drone_id, $latitude, $longitude, $altitude, $datetime);
+//$stmt = $conn->prepare("INSERT INTO drone_positions (latitude, longitude, altitude, datetime) VALUES ($latitude, $longitude, $altitude, $date)");
+//$stmt->execute("sddds", $latitude, $longitude, $altitude, $date);
 
-// Exécuter la requête
-$stmt->execute();
+$stmt = $conn->prepare("INSERT INTO drone_positions (latitude, longitude, altitude, datetime) VALUES (:latitude, :longitude, :altitude, :date)");
+$stmt->execute(["latitude" => $latitude, "longitude" => $longitude, "altitude" => $altitude, "date" => $date]);
 
-echo "Position enregistrée avec succès";
+} catch(PDOException $e) {
+    echo "Erreur de connexion : " . $e->getMessage();
+}
 
-$stmt->close();
 $conn->close();
 ?>
