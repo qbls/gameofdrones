@@ -23,5 +23,4 @@ $stmt->execute(["latitude" => $latitude, "longitude" => $longitude, "altitude" =
     echo "Erreur de connexion : " . $e->getMessage();
 }
 
-$conn->close();
 ?>

@@ -10,7 +10,7 @@ Le code PHP et l'API ont été réalisés par Quentin.
 
 Identifiants :\
 Login : Matis\
-Mot de passe : Quentin\
+Mot de passe : Quentin
 
 Il suffit de se rendre dans "login.html" et de rentrer les identifiants.\
 Vous pouvez ensuite accéder aux valeurs de la base de données, soit les positions du drone.
