@@ -4,11 +4,11 @@
         }
 
         th, td {
-            border: 1px solid #8af9d9;
+            border: 1px solid #000000;
             text-align: left;
             padding: 8px;
         }
 
         th {
-            background-color: #000000;
+            background-color: #c2fffb;
         }
