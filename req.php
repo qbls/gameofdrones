@@ -1,9 +1,9 @@
 <?php
 // Paramètres de connexion à la base de données
-$servername = "10.5.40.44"; //
+$servername = "10.5.40.34"; //
 $username = "user";
 $password = "user";
-$dbname = "gameofdrone";
+$dbname = "gameofdrones";
 
 // Créer la connexion
 $conn = new mysqli($servername, $username, $password, $dbname);
