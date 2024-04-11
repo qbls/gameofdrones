@@ -12,3 +12,6 @@ $pwd = $_POST['password'];
     }
 
 ?>
+<br>
+
+<button onclick="window.location.href = 'index.php';">Voir les valeurs</button>

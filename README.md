@@ -6,6 +6,15 @@ La base de données (MariaDB) et le serveur Web (Apache2) sont sur la même VM d
 
 Le code PHP et l'API ont été réalisés par Quentin.
 
+## Utilisation
+
+Identifiants :\
+Login : Matis\
+Mot de passe : Quentin\
+
+Il suffit de se rendre dans "login.html" et de rentrer les identifiants.\
+Vous pouvez ensuite accéder aux valeurs de la base de données, soit les positions du drone.
+
 
 ### Auteurs du projet
 

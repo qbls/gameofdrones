@@ -15,15 +15,7 @@ $longitude = $_POST['longitude'];
 $altitude = $_POST['altitude'];
 $date = date("Y-m-d H:i:s");
 
-//$latitude = $_GET['latitude'];
-//$longitude = $_GET['longitude'];
-//$altitude = $_GET['altitude'];
-//$date = date("Y-m-d H:i:s");
-
-// Préparer et lier
-//$stmt = $conn->prepare("INSERT INTO drone_positions (latitude, longitude, altitude, datetime) VALUES ($latitude, $longitude, $altitude, $date)");
-//$stmt->execute("sddds", $latitude, $longitude, $altitude, $date);
-
+//Préparer et lier
 $stmt = $conn->prepare("INSERT INTO drone_positions (latitude, longitude, altitude, datetime) VALUES (:latitude, :longitude, :altitude, :date)");
 $stmt->execute(["latitude" => $latitude, "longitude" => $longitude, "altitude" => $altitude, "date" => $date]);
 
