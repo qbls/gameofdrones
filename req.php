@@ -1,8 +1,8 @@
 <?php
 // Paramètres de connexion à la base de données
 $servername = "10.5.40.44"; //
-$username = "root";
-$password = "root";
+$username = "user";
+$password = "user";
 $dbname = "gameofdrone";
 
 // Créer la connexion
@@ -19,6 +19,12 @@ $latitude = $_POST['latitude'];
 $longitude = $_POST['longitude'];
 $altitude = $_POST['altitude'];
 $datetime = $_POST['datetime'];
+
+$drone_id = $_GET['drone_id'];
+$latitude = $_GET['latitude'];
+$longitude = $_GET['longitude'];
+$altitude = $_GET['altitude'];
+$datetime = $_GET['datetime'];
 
 // Préparer et lier
 $stmt = $conn->prepare("INSERT INTO drone_positions (drone_id, latitude, longitude, altitude, datetime) VALUES (?, ?, ?, ?, ?)");
