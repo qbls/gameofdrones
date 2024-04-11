@@ -6,16 +6,20 @@ La base de données (MariaDB) et le serveur Web (Apache2) sont sur la même VM d
 
 Le code PHP et l'API ont été réalisés par Quentin.
 
+
 * Auteurs du projet
 
-Quentin BLASCO, Bachelor CSI (Conception de Sytèmes d'Informations)
+Quentin BLASCO, Bachelor CSI (Conception de Sytèmes d'Informations)\
 Matis JANSOU, Bachelor CSI (Conception de Sytèmes d'Informations)
+
 
 * Contacts
 
 MAIL :
 
-quentin.blasco@orange.fr
+quentin.blasco@orange.fr\
+
 jansoumatis7@gmail.com
+
 
 * Version 1.0.0 du 12/04/2024
