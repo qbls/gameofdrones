@@ -12,7 +12,7 @@ Le code PHP et l'API ont été réalisés par Quentin.
 
 ## Utilisation
 
-Identifiants :\
+Identifiants :
 
 Il suffit de se rendre dans "login.html" et de rentrer les identifiants en corrélation de ceux sur la bdd.\
 Vous pouvez ensuite accéder aux valeurs de la base de données, soit les positions du drone.
