@@ -18,7 +18,7 @@
 
 <?php
 
-    if(isset($_SESSION['login']) && $_SESSION['login']=='Matis'){
+    if(isset($_SESSION['login'])) {
 
 ?>
 
