@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "3c2869e9-67c1-462d-b506-61ad41bba2cd",
+		"name": "GameOfDrone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33642004"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"latitude\": 48.8584,\r\n    \"longitude\": 2.2945,\r\n    \"altitude\": 150.5,\r\n    \"datetime\": \"2024-04-11 10:00:00\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.5.40.34/drone/req.php",
+					"protocol": "http",
+					"host": [
+						"10",
+						"5",
+						"40",
+						"34"
+					],
+					"path": [
+						"drone",
+						"req.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
